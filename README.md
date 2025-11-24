@@ -86,6 +86,10 @@ Found a bug? Please let us know!
 ## Legal Notices
 
 © 2025 Infradise Inc. All rights reserved.  
-Keyscope is a product of Infradise Inc. Not affiliated with Linux Foundation, Redis Ltd., JetBrains s.r.o.  
 
-[Legal Notices](https://keyscope.dev/legal)
+**Keyscope** is a product of Infradise Inc.  
+
+We are **not affiliated with** The Linux Foundation, Redis Ltd., JetBrains s.r.o.  
+
+All other trademarks cited herein are the property of their respective owners.  
+For full legal details and a comprehensive list of third-party trademarks, please visit our [Legal Notices](https://keyscope.dev/legal).
