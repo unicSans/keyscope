@@ -59,16 +59,6 @@ Keyscope is compatible with all IntelliJ Platform-based products (Version 2023.x
 
 > **Note:** This plugin is **NOT** available for VS Code or Eclipse. It is a specialized tool for the JetBrains family.
 
-## Pricing & Licensing
-
-Keyscope is a paid plugin available via the **JetBrains Marketplace**. We believe in a fair "Try before you Buy" model.
-
-* **30-Day Free Trial:** Full access to all features. No credit card required to start.
-* **Individual Plan:** **$5 / month** or **$50 / year** (Save ~17%).
-* **Organization Plan:** Same pricing per seat. Easily manage licenses via your JetBrains Account.
-
-> Payment and subscription management are securely handled by JetBrains.
-
 ## Installation
 
 1.  Open your IDE (Android Studio, IntelliJ IDEA, PyCharm, etc.).
@@ -87,13 +77,6 @@ Keyscope is a paid plugin available via the **JetBrains Marketplace**. We believ
 
 ## Feedback & Support
 
-Found a bug? Have a feature request? Please let us know!
-
-* **Bug Report:** [Open an Issue](https://github.com/infradise/keyscope/issues/new?template=bug_report.md)
-* **Feature Request:** [Suggest a Feature](https://github.com/infradise/keyscope/issues/new?template=feature_request.md)
-
-## Feedback & Support
-
 Found a bug? Please let us know!
 
-* **Bug Report:** [Open an Issue](https://github.com/infradise/keyscope/issues/new)
+* **Bug Report:** [Open an Issue](https://github.com/infradise/keyscope/issues/new?template=bug_report.md)
