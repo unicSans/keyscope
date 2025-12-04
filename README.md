@@ -1,3 +1,5 @@
+[![JetBrains Plugin Version](https://img.shields.io/jetbrains/plugin/v/dev.keyscope.plugin)](https://plugins.jetbrains.com/plugin/29250-keyscope)
+
 # Keyscope
 
 <div align="center">
