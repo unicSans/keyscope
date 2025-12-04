@@ -31,6 +31,13 @@
 
 ---
 
+  ![Keyscope Connection Screen](https://download.keyscope.dev/screenshot/keyscope-connection-screen.png)
+
+  ![Keyscope Key-Value Screen](https://download.keyscope.dev/screenshot/keyscope-key-value-screen.png)
+</div>
+
+---
+
 ## Why Keyscope?
 
 **Keyscope** is not just another Redis GUI client. It is a specialized tool designed to unlock the full potential of **Valkey**. We focus on modern developer experience (DX) and performance.
