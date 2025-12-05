@@ -6,10 +6,11 @@
   <img src="https://download.keyscope.dev/logo.png" alt="Keyscope Logo" width="128" height="128">
   <br>
   
-  <h1>The Native GUI for Valkey and Redis</h1>
+  <h1>The Native Redis & Valkey IDE for JetBrains</h1>
   <p>
-    <b>Built for Valkey and Redis</b><br>
-    Manage your data, monitor performance, and deploy clusters locally without Docker Desktop.
+    The native, lightweight, high-performance Redis & Valkey management plugin for JetBrains IDEs.<br> 
+    Manage data and monitor performance without leaving your code.<br>
+    <b>Built exclusively for JetBrains IDEs</b>
   </p>
 
   <p>
