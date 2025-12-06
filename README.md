@@ -39,22 +39,47 @@
 
 ---
 
+
+## Key Features
+
+### Connectivity & Compatibility
+* **Dual Support:** Fully compatible with both **Redis** and **Valkey** (detects version automatically).
+* **Connection Modes:**
+    * **Standalone:** Direct connection to single instances.
+    * **Cluster:** Automatic topology discovery and redirection handling.
+    * **Sentinel:** (Planned) Support for high-availability setups.
+* **SSH Tunneling:** Built-in SSH tunneling support (Password & Key Pair auth) for secure remote access without external tools.
+
+### Security
+* **Secure Storage:** Passwords and private keys are never stored in plain text. Keyscope integrates with the **OS System Keychain** to keep your credentials safe.
+
+### UI/UX
+* **Native IDE Integration:** Built with Kotlin UI DSL to provide a seamless JetBrains look-and-feel (Dark/Light theme support).
+* **Hierarchical Explorer:**
+    * Tree-based navigation: `Server` → `Database` → `Data Type`.
+    * Quickly identify key distribution by type (String, Hash, List, Set, ZSet, Stream).
+* **Tabbed Workspace:** Open multiple database views simultaneously using the IDE's native tab system.
+
+### Data Management & Viewer
+* **Smart Data Viewer:**
+    * **JSON Pretty Print:** Automatically detects JSON strings within keys and formats them for readability.
+    * **Type-Specific Rendering:** Specialized views for Hashes, Lists, Sets, and Sorted Sets.
+* **Performance:**
+    * **Lazy Loading:** Uses `SCAN` cursors to handle millions of keys without freezing the UI.
+    * **Type Filtering:** Server-side filtering using `SCAN ... TYPE` for efficient browsing.
+* **Metadata:** Displays Key TTL (Time-To-Live), Type, and Size at a glance.
+
 ## Why Keyscope?
 
 **Keyscope** is not just another Redis GUI client. It is a specialized tool designed to unlock the full potential of **Valkey**. We focus on modern developer experience (DX) and performance.
 
-### Key Features (*Planned*)
-
-* **1-Click Cluster Setup (Docker-less)**
-    * Deploy a production-ready **3 Master + 3 Replica** cluster on your local machine in seconds.
-    * **No Docker Desktop required.** No complex `docker-compose` files. It just works.
 * **Built for Valkey and Redis**
     * Native support for Valkey's new threading model and data structures.
     * Visualized monitoring optimized for Valkey metrics.
 * **Native Performance**
-    * Built with **Pure Java** and the JetBrains SDK. No web views, no heavy frameworks, and no context switching. It is optimized for speed and minimal resource consumption.
+    * Built with **Kotlin** and the JetBrains SDK. No web views, no heavy frameworks, and no context switching. It is optimized for speed and minimal resource consumption.
 * **Native Look & Feel**
-    * We utilize the standard **JetBrains UI components**. Whether you are using the Darkula theme or the new UI, Keyscope blends in perfectly, providing a consistent and comfortable user experience, and an interface designed for long coding sessions.
+    * We utilize the standard **JetBrains UI components**. Whether you are using the Darcula theme or the new UI, Keyscope blends in perfectly, providing a consistent and comfortable user experience, and an interface designed for long coding sessions.
 * **Focus on Essentials**
     * Designed for developers who need to manage Valkey and Redis clusters without leaving their code.
 
@@ -84,6 +109,9 @@ Keyscope is compatible with all IntelliJ Platform-based products (Version 2023.x
 - [ ] Slow Log & Hot Key Analysis
 - [ ] Data Import/Export (JSON, CSV)
 - [ ] Team Collaboration Features (Pro)
+- [ ] 1-Click Cluster Setup (Docker-less)
+  - Deploy a production-ready **3 Master + 3 Replica** cluster on your local machine in seconds.
+  - **No Docker Desktop required.** No complex `docker-compose` files. It just works.
 
 ## Feedback & Support
 
