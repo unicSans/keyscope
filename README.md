@@ -39,7 +39,6 @@
 
 ---
 
-
 ## Key Features
 
 ### Connectivity & Compatibility
@@ -50,6 +49,9 @@
     * **Sentinel:** (Planned) Support for high-availability setups.
 * **SSH Tunneling:** Built-in SSH tunneling support (Password & Key Pair auth) for secure remote access without external tools.
 
+### Full CRUD Support
+* You can now **Create, Read, Update, and Delete** Redis keys directly within your IDE. We have also improved database navigation to make managing multiple logical databases easier.
+
 ### Security
 * **Secure Storage:** Passwords and private keys are never stored in plain text. Keyscope integrates with the **OS System Keychain** to keep your credentials safe.
 
@@ -59,8 +61,18 @@
     * Tree-based navigation: `Server` → `Database` → `Data Type`.
     * Quickly identify key distribution by type (String, Hash, List, Set, ZSet, Stream).
 * **Tabbed Workspace:** Open multiple database views simultaneously using the IDE's native tab system.
+* **Database Visibility:**
+    * The Explorer now displays all available databases (e.g., DB0 ~ DB15) even if they are empty, enabling you to add new keys to unused databases easily.
+* **Multi-Database Reliability:**
+    * Enhanced the connection logic to strictly enforce `SELECT <dbIndex>` commands, ensuring that read/write operations always occur on the correct database tab.
 
-### Data Management & Viewer
+### Data Management & Editor
+* **Key Management (CRUD):**
+    * **Add Key:** Create new keys (String type) with custom values and TTL using the new "Add Key" dialog. The list automatically refreshes to show the new key immediately.
+    * **Edit Value:** The data viewer is now a fully functional editor. Modify text values and click "Save" to update them in Redis instantly.
+    * **Delete Key:** Select and remove keys directly from the list (supports multi-selection) via the new toolbar action.
+* **Session Toolbar:**
+    * Added a dedicated toolbar inside the editor tabs for quick access to **Add**, **Delete**, **Refresh**, **Save**, and **Format JSON** actions.
 * **Smart Data Viewer:**
     * **JSON Pretty Print:** Automatically detects JSON strings within keys and formats them for readability.
     * **Type-Specific Rendering:** Specialized views for Hashes, Lists, Sets, and Sorted Sets.
