@@ -34,7 +34,7 @@
 
   ![Keyscope Connection Screen](https://download.keyscope.dev/screenshot/keyscope-connection-screen.png)
 
-  ![Keyscope Key-Value Screen](https://download.keyscope.dev/screenshot/keyscope-key-value-screen.png)
+  ![Keyscope Key-Value Screen](https://download.keyscope.dev/screenshot/keyscope-database-and-keys.png)
 </div>
 
 ---
